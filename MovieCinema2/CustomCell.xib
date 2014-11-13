@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="6Y0-LH-L0d" customClass="CustomCell" customModule="MovieCinema" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Y0-LH-L0d" id="ytY-oh-fmb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r3S-6a-8md">
+                        <rect key="frame" x="8" y="8" width="160" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="5ro-mZ-eT5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Us-aV-KrM">
+                        <rect key="frame" x="176" y="18" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="j39-Zi-bZp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tX2-9K-1HK">
+                        <rect key="frame" x="176" y="106" width="60" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="CqH-Uk-Vcq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shop.png" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-mW-IrN">
+                        <rect key="frame" x="337" y="57" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Fhu-nh-1Sd"/>
+                            <constraint firstAttribute="width" constant="32" id="Ojw-H8-bxM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="wXZ-mW-IrN" secondAttribute="centerY" id="5mR-vg-BvI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wXZ-mW-IrN" secondAttribute="trailing" constant="29" id="7gc-Jy-2HB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tX2-9K-1HK" secondAttribute="bottom" constant="11" id="Lz8-oM-lEH"/>
+                    <constraint firstItem="6Us-aV-KrM" firstAttribute="leading" secondItem="r3S-6a-8md" secondAttribute="trailing" constant="8" id="Mil-Xs-wgI"/>
+                    <constraint firstItem="r3S-6a-8md" firstAttribute="bottom" secondItem="ytY-oh-fmb" secondAttribute="bottomMargin" id="RwU-Ui-tAi"/>
+                    <constraint firstItem="r3S-6a-8md" firstAttribute="top" secondItem="ytY-oh-fmb" secondAttribute="topMargin" id="WI0-AC-WCm"/>
+                    <constraint firstItem="r3S-6a-8md" firstAttribute="leading" secondItem="ytY-oh-fmb" secondAttribute="leadingMargin" id="ey0-jg-Rf0"/>
+                    <constraint firstItem="6Us-aV-KrM" firstAttribute="top" secondItem="ytY-oh-fmb" secondAttribute="topMargin" constant="10" id="knf-AX-maA"/>
+                    <constraint firstItem="tX2-9K-1HK" firstAttribute="leading" secondItem="r3S-6a-8md" secondAttribute="trailing" constant="8" id="uUs-nb-rdB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="score" destination="tX2-9K-1HK" id="wHi-Sy-0Ef"/>
+                <outlet property="thumb" destination="r3S-6a-8md" id="kQq-5I-UPr"/>
+                <outlet property="title" destination="6Us-aV-KrM" id="tSh-Ue-GQ1"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="135.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shop.png" width="32" height="32"/>
+    </resources>
+</document>
